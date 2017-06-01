@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reisende</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="animate.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+</head>
+<body>
+
+<div id="page-preloader" class="preloader">
+	<div class="loader"></div>
+	<div class="loader1"></div>
+	<div class="loader2"></div>
+</div>
+
+<nav class="navbar navbar-toggleable-md navbar-inverse">
+	<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#sup">
+		<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="container">
+		<a class=" animated fadeInDown navbar-brand" href="#">Re<i class="fa fa-bolt"></i>sende</a>
+		<div class="collapse navbar-collapse" id="sup">
+			<ul class="navbar-nav ml-auto">
+			<li id="r1" class="nav-item animated fadeInDown"><a class="nav-link" href="#">Главная</a></li>
+			<li id="r2" class="nav-item animated fadeInDown"><a class="nav-link" href="#">Обо мне</a></li>
+			<li id="r3" class="nav-item animated fadeInDown"><a class="nav-link" href="#">Мои знания</a></li>
+			<li id="r4" class="nav-item animated fadeInDown"><a class="nav-link" href="#work">Мои работы</a></li>
+		 	<li id="r5" class="nav-item animated fadeInDown"><a class="nav-link" href="#">Почему я</a></li>
+			<li id="r6" class="nav-item animated fadeInDown"><a class="nav-link last" href="#">Контакты</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<div class="left-panel">
+	<div class="panel-item first" id="w1">Главная</div>
+	<div class="panel-item" id="w2">Обо мне</div>
+	<div class="panel-item" id="w3">Мои знания</div>
+	<div class="panel-item" id="w4">Мои работы</div>
+	<div class="panel-item" id="w5">Почему я</div>
+	<div class="panel-item" id="w6">Контакты</div>
+	<div class="panel-item" id="w7">Скрыть меню
+		<div class="rotated-item"></div>
+	</div>
+</div>
+<div class="open" id="open"></div>
+<div class="container-fluid quad">
+	<div class="container content-caption">
+		<div class="row justify-content-center">
+			<div class="description">
+				<p class="animated fadeInDown">Привет</p>
+				<img class="animated fadeIn" src="images/img-html-css.png">
+				<div class="just animated fadeInUp">Меня зовут Олег, мне 15. Я кадровый Front-end-разработчик, со стажем в один год. Ниже вы можете ознакомиться со всей необходимой информацией. Если вам нужен сайт, то вы можете связаться со мной, и мы обсудим все детали.</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container-fluid pent">
+	<div class="caption">Мои знания и навыки</div>
+	<div class="mov animated">
+		<div id="round">
+		    <div class="css"><img class="animated mov-l" src="images/html.png"></div> 
+		    <div class="css"><img class="animated mov-r" src="images/css.png"></div>
+		    <div class="css"><img class="animated mov-r" src="images/js.png"></div>
+		    <div class="css"><img class="animated mov-l" src="images/jquery.png"></div> 
+		    <div class="css"><img class="animated mov-l" src="images/point-js.png"></div>
+		    <div class="css"><img class="animated mov-r" src="images/bootstrap.png"></div>
+		</div>
+	</div>
+</div>
+<div class="container-fluid works work">
+	<div class="container">
+		<div class="my-works">Мои работы</div>
+		<div id="carouselExampleIndicators" class="slider carousel slide" data-ride="carousel">
+		<div class="click-me">Click</div>
+		  <ol class="carousel-indicators">
+		    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+		    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+		    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+		    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+		  </ol>
+		  <div class="carousel-inner" role="listbox">
+		    <div class="carousel-item active">
+		    	<a target="_blank" href="https://oleg-evens.github.io/creatives.github.io"> 	
+		      		<img class="d-block" height="506.25px" src="images/creatives.png">
+		      	</a>
+		    </div>
+		    <div class="carousel-item">
+		    	<a target="_blank" href="https://oleg-evens.github.io/unique-tech"> 
+		      		<img class="d-block" height="506.25px" src="images/unique-tech.png">
+		      	</a>
+		    </div>
+		    <div class="carousel-item">
+		    	<a target="_blank" href="https://oleg-evens.github.io/exe"> 
+		      		<img class="d-block" height="506.25px" src="images/exe.png">
+		      	</a>
+		    </div>
+		    <div class="carousel-item">
+		    	<a target="_blank" href="https://oleg-evens.github.io/guitar-school"> 
+		      		<img class="d-block" height="506.25px" src="images/guitar-school.png">
+		      	</a>
+		    </div>
+		  </div>
+		  <a class="carousel-control-prev" href="#carouselExampleIndicators" data-slide="prev">
+		    <span class="carousel-control-prev-icon"></span>
+		    <span class="sr-only">Previous</span>
+		  </a>
+		  <a class="carousel-control-next" href="#carouselExampleIndicators" data-slide="next">
+		    <span class="carousel-control-next-icon"></span>
+		    <span class="sr-only">Next</span>
+		  </a>
+		</div>
+	</div>
+</div>
+<div class="container-fluid">
+	<div class="arguments">
+		<div class="animated mov ag">Почему я</div>
+		<div class="row col-lg-12">
+			<div class="animated mov col-lg-4 col-md-4 col-sm-4">
+				<div class="arg">
+					<div>Качество</div>
+					<div><img src="images/wrench.png"></div>
+					<div class="col-lg-6 offset-lg-3 docs">Cделаю ваш сайт лучшим способом, а главное качественно, при необходимости с использованием фрейворков.</div>
+				</div>
+			</div>
+			<div class="animated mov col-lg-4 col-md-4 col-sm-4">
+				<div class="arg">
+					<div>Время</div>
+					<div><img src="images/hourglass.png"></div>
+					<div class="col-lg-6 offset-lg-3 docs">Ваш личный готовый сайт вы получите настолько быстро, насколько это возможно, и даже немного быстрее.</div>
+				</div>
+			</div>
+			<div class="animated mov col-lg-4 col-md-4 col-sm-4">
+				<div class="arg">
+					<div>Цена</div>
+					<div><img src="images/dollars.png"></div>
+					<div class="col-lg-6 offset-lg-3 docs">Вам не придется тратить много денег для того, чтобы воспользоваться моими услугами и заказать какой-либо сайт</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container-fluid cont">
+	<div class="animated mov main-contact">Контакты</div>
+	<div class="column">
+		<div class="animated mov col-lg-6 col-md-6 col-sm-12 offset-lg-4 offset-md-4 desc">Чтобы связаться со мной заполните форму ниже:</div>
+		<div class="col-lg-6 col-md-12 col-sm-12 offset-lg-3">
+			<div class="form-group row">
+	   			<input class="animated mov form-control cond1" type="text" value="Введите свой Email здесь" id="example-text-input">
+	   			<textarea class="animated mov form-control cond2" type="text" placeholder="Введите своё сообщение здесь" id="example-text-input"></textarea>
+			</div>
+		</div>
+		<div class="animated mov btn offset-lg-3 number">
+			<div>Отправить</div>
+		</div>
+	</div>
+</div>
+<div class="container-fluid">
+	<div class="footer">
+		<div><i class="fa fa-vk"></i></div>
+		<div>Email: enigma597</div>
+		<div><i class="fa fa-copyright"></i>Все права защищены</div>
+	</div>
+</div>
+
+<script src="https://use.fontawesome.com/21d2ea8268.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script src="js/preloader.js"></script>
+
+</body>
+</html>
