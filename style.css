@@ -345,7 +345,7 @@ a:hover {
 
 .arg {
 	text-align: center;
-	margin: 0 0 100px 0;
+	margin: 0;
 }
 
 .arg div:first-child {
@@ -461,25 +461,29 @@ a:hover {
 }
 
 .works {
-	height: 700px;
+	height: 750px;
 	background: #5d5d5d;
 }
 
 @media screen and (max-width: 1000px) {
 	.works {
-		height: 550px;
+		height: 600px;
 	}
 }
 
 @media screen and (max-width: 900px) {
+	.ex-cap {
+		padding: 5px 0 !important;
+		font-size: 30px;
+	}
 	.works {
-		height: 400px;
+		height: 450px;
 	}
 }
 
 @media screen and (max-width: 700px) {
 	.works {
-		height: 300px;
+		height: 350px;
 	}
 }
 
@@ -488,10 +492,19 @@ a:hover {
 		height: 200px;
 	}
 	.works {
-		height: 250px;
+		height: 300px;
 	}
 	.slider {
 		width: 200px;
+	}
+	.ag {
+		margin: -25px 0;
+	}
+	.arg div:first-child {
+		padding: 50px 0 25px 0;
+	}
+	.arg {
+		margin-bottom: -25px;
 	}
 }
 
@@ -501,13 +514,13 @@ a:hover {
 		width: 255px;
 	}
 	.works {
-		height: 175px;
+		height: 250px;
 	}
 }
 
 @media screen and (max-width: 300px) {
 	.works {
-		height: 125px;
+		height: 250px;
 	}
 }
 
@@ -593,6 +606,8 @@ a:hover {
 }
 
 .left-panel {
+	top: 0;
+	left: 0;
 	position: fixed;
 	font-size: 18px;
 	color: #fff;
@@ -786,4 +801,8 @@ a:hover {
 .slick-img {
 	max-width: 100%;
 	height: auto;
+}
+
+.ex-cap {
+	padding: 25px 0;
 }
