@@ -72,6 +72,10 @@ a:hover {
 	background: #3d3d3d;
 	color: #3d3d3d;
 	border-radius: 3px;
+	-o-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
 	transition: 0.3s;
 	-o-transition: 0.3s;
 	-moz-transition: 0.3s;
@@ -82,6 +86,10 @@ a:hover {
 	background: transparent;
 	color: #fff;
 	border-radius: 3px;
+	-o-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
 }
 
 .navbar-brand i {
@@ -155,6 +163,7 @@ a:hover {
 	height: 500px;
 	border-radius: 50%;
 	-o-border-radius: 50%;
+	-ms-border-radius: 50%;
 	-moz-border-radius: 50%;
 	-webkit-border-radius: 50%;
 	animation: rotate_lp 60s infinite linear;
@@ -271,12 +280,28 @@ a:hover {
 
 @keyframes rotate_lp {
 	0% {transform: rotate(0deg)}
+	0% {-o-transform: rotate(0deg)}
+	0% {-ms-transform: rotate(0deg)}
+	0% {-moz-transform: rotate(0deg)}
+	0% {-webkit-transform: rotate(0deg)}
 	100% {transform: rotate(-360deg)}
+	100% {-o-transform: rotate(-360deg)}
+	100% {-ms-transform: rotate(-360deg)}
+	100% {-moz-transform: rotate(-360deg)}
+	100% {-webkit-transform: rotate(-360deg)}
 }
 
 @keyframes rotate_lp_invert {
 	0% {transform: rotate(0deg)}
+	0% {-o-transform: rotate(0deg)}
+	0% {-ms-transform: rotate(0deg)}
+	0% {-moz-transform: rotate(0deg)}
+	0% {-webkit-transform: rotate(0deg)}
 	100% {transform: rotate(360deg)}
+	100% {-o-transform: rotate(360deg)}
+	100% {-ms-transform: rotate(360deg)}
+	100% {-moz-transform: rotate(360deg)}
+	100% {-webkit-transform: rotate(360deg)}
 }
 
 .lp {
@@ -316,12 +341,40 @@ a:hover {
 
 @keyframes rotate-image {
 	0%{transform: rotate(0deg)}
+	0%{-o-transform: rotate(0deg)}
+	0%{-ms-transform: rotate(0deg)}
+	0%{-moz-transform: rotate(0deg)}
+	0%{-webkit-transform: rotate(0deg)}
 	5%{transform: rotate(-2.5deg)}
+	5%{-o-transform: rotate(-2.5deg)}
+	5%{-ms-transform: rotate(-2.5deg)}
+	5%{-moz-transform: rotate(-2.5deg)}
+	5%{-webkit-transform: rotate(-2.5deg)}
 	10%{transform: rotate(2.5deg)}
+	10%{-o-transform: rotate(2.5deg)}
+	10%{-ms-transform: rotate(2.5deg)}
+	10%{-moz-transform: rotate(2.5deg)}
+	10%{-webkit-transform: rotate(2.5deg)}
 	15%{transform: rotate(-1.25deg)}
+	15%{-o-transform: rotate(-1.25deg)}
+	15%{-ms-transform: rotate(-1.25deg)}
+	15%{-moz-transform: rotate(-1.25deg)}
+	15%{-webkit-transform: rotate(-1.25deg)}
 	20%{transform: rotate(1.25deg)}
+	20%{-o-transform: rotate(1.25deg)}
+	20%{-ms-transform: rotate(1.25deg)}
+	20%{-moz-transform: rotate(1.25deg)}
+	20%{-webkit-transform: rotate(1.25deg)}
 	25%{transform: rotate(0deg)}
+	25%{-o-transform: rotate(0deg)}
+	25%{-ms-transform: rotate(0deg)}
+	25%{-moz-transform: rotate(0deg)}
+	25%{-webkit-transform: rotate(0deg)}
 	100%{transform: rotate(0deg)}
+	100%{-o-transform: rotate(0deg)}
+	100%{-ms-transform: rotate(0deg)}
+	100%{-moz-transform: rotate(0deg)}
+	100%{-webkit-transform: rotate(0deg)}
 }
 
 .descript {
@@ -373,12 +426,40 @@ a:hover {
 
 @keyframes rotate {
 	0%{transform: rotate(0deg)}
+	0%{-o-transform: rotate(0deg)}
+	0%{-ms-transform: rotate(0deg)}
+	0%{-moz-transform: rotate(0deg)}
+	0%{-webkit-transform: rotate(0deg)}
 	5%{transform: rotate(-5deg)}
+	5%{-o-transform: rotate(-5deg)}
+	5%{-ms-transform: rotate(-5deg)}
+	5%{-moz-transform: rotate(-5deg)}
+	5%{-webkit-transform: rotate(-5deg)}
 	10%{transform: rotate(5deg)}
+	10%{-o-transform: rotate(5deg)}
+	10%{-ms-transform: rotate(5deg)}
+	10%{-moz-transform: rotate(5deg)}
+	10%{-webkit-transform: rotate(5deg)}
 	15%{transform: rotate(-2.5deg)}
+	15%{-o-transform: rotate(-2.5deg)}
+	15%{-ms-transform: rotate(-2.5deg)}
+	15%{-moz-transform: rotate(-2.5deg)}
+	15%{-webkit-transform: rotate(-2.5deg)}
 	20%{transform: rotate(2.5deg)}
+	20%{-o-transform: rotate(2.5deg)}
+	20%{-ms-transform: rotate(2.5deg)}
+	20%{-moz-transform: rotate(2.5deg)}
+	20%{-webkit-transform: rotate(2.5deg)}
 	25%{transform: rotate(0deg)}
+	25%{-o-transform: rotate(0deg)}
+	25%{-ms-transform: rotate(0deg)}
+	25%{-moz-transform: rotate(0deg)}
+	25%{-webkit-transform: rotate(0deg)}
 	100%{transform: rotate(0deg)}
+	100%{-o-transform: rotate(0deg)}
+	100%{-ms-transform: rotate(0deg)}
+	100%{-moz-transform: rotate(0deg)}
+	100%{-webkit-transform: rotate(0deg)}
 }
 
 .docs {
@@ -390,7 +471,11 @@ a:hover {
 }
 
 .contact {
-	display: flex;
+	display: flex; 
+	display: -moz-box; 
+	display: -ms-flexbox; 
+	display: -webkit-box; 
+	display: -webkit-flex;
 	flex-direction: row;
 	justify-content: space-around;
 	font-size: 20px;
@@ -398,7 +483,11 @@ a:hover {
 
 .main-contact {
 	font-family: Lobster !important;
-	display: flex;
+	display: flex; 
+	display: -moz-box; 
+	display: -ms-flexbox; 
+	display: -webkit-box; 
+	display: -webkit-flex;
 	justify-content: center;
 	font-size: 75px;
 	padding: 50px 0;
@@ -420,7 +509,15 @@ a:hover {
 	padding: 15px;
 	font-size: 20px;
 	border-radius: 10px;
+	-o-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
 	border: 1px transparent solid;
+	-o-border: 1px transparent solid;
+	-ms-border: 1px transparent solid;
+	-moz-border: 1px transparent solid;
+	-webkit-border: 1px transparent solid;
 	transition: 0.3s;
 	-o-transition: 0.3s;
 	-moz-transition: 0.3s;
@@ -431,6 +528,10 @@ a:hover {
 .number div:hover {
 	background: #c79d73;
 	border: 1px #5cb3fd solid;
+	-o-border: 1px #5cb3fd solid;
+	-ms-border: 1px #5cb3fd solid;
+	-moz-border: 1px #5cb3fd solid;
+	-webkit-border: 1px #5cb3fd solid;
 }
 
 .footer {
@@ -572,6 +673,10 @@ a:hover {
 	background: #000;
 	z-index: 100;
 	transition: 1s;
+	-o-transition: 1s;
+	-ms-transition: 1s;
+	-moz-transition: 1s;
+	-webkit-transition: 1s;
 	opacity: 1;
 	visibility: visible;
 }
@@ -586,11 +691,27 @@ a:hover {
 	width: 75px;
 	height: 75px;
 	border: 3px #fff solid;
+	-o-border: 3px #fff solid;
+	-ms-border: 3px #fff solid;
+	-moz-border: 3px #fff solid;
+	-webkit-border: 3px #fff solid;
 	border-radius: 50%;
+	-o-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
 	border-top: 3px orange solid;
+	-o-border-top: 3px orange solid;
+	-ms-border-top: 3px orange solid;
+	-moz-border-top: 3px orange solid;
+	-webkit-border-top: 3px orange solid;
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
 	animation: spin 3s infinite linear;
 }
 
@@ -599,8 +720,20 @@ a:hover {
 	width: 55px;
 	height: 55px;
 	border: 3px #fff solid;
+	-o-border: 3px #fff solid;
+	-ms-border: 3px #fff solid;
+	-moz-border: 3px #fff solid;
+	-webkit-border: 3px #fff solid;
 	border-radius: 50%;
+	-o-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
 	border-top: 3px orange solid;
+	-o-border-top: 3px orange solid;
+	-ms-border-top: 3px orange solid;
+	-moz-border-top: 3px orange solid;
+	-webkit-border-top: 3px orange solid;
 	left: 50%;
 	top: 50%;
 	margin-left: 10px;
@@ -613,8 +746,20 @@ a:hover {
 	width: 35px;
 	height: 35px;
 	border: 3px #fff solid;
+	-o-border: 3px #fff solid;
+	-ms-border: 3px #fff solid;
+	-moz-border: 3px #fff solid;
+	-webkit-border: 3px #fff solid;
 	border-radius: 50%;
+	-o-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
 	border-top: 3px orange solid;
+	-o-border-top: 3px orange solid;
+	-ms-border-top: 3px orange solid;
+	-moz-border-top: 3px orange solid;
+	-webkit-border-top: 3px orange solid;
 	left: 50%;
 	top: 50%;
 	margin-left: 20px;
@@ -623,8 +768,16 @@ a:hover {
 }
 
 @keyframes spin {
-	0% {transform: rotate(0deg);}
-	100% {transform: rotate(-360deg);}
+	0% {transform: rotate(0deg)}
+	0% {-o-transform: rotate(0deg)}
+	0% {-ms-transform: rotate(0deg)}
+	0% {-moz-transform: rotate(0deg)}
+	0% {-webkit-transform: rotate(0deg)}
+	100% {transform: rotate(-360deg)}
+	100% {-o-transform: rotate(-360deg)}
+	100% {-ms-transform: rotate(-360deg)}
+	100% {-moz-transform: rotate(-360deg)}
+	100% {-webkit-transform: rotate(-360deg)}
 }
 
 .left-panel {
