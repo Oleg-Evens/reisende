@@ -98,3 +98,44 @@ function f() {
 		$('.open').css('left', -200);
 	}
 }
+
+$('.lang').click(function(event){
+	clearTimeout(timer);
+	var target = event.target;
+	$('.description-languages').css('right', -400);
+	if($(target).hasClass('html')) {
+		$('.dl .html').css('right', 0);
+	}
+	if($(target).hasClass('xss')) {
+		$('.dl .xss').css('right', 0);
+	}
+	if($(target).hasClass('js')) {
+		$('.dl .js').css('right', 0);
+	}
+	if($(target).hasClass('point-js')) {
+		$('.dl .point-js').css('right', 0);
+	}
+	if($(target).hasClass('jquery')) {
+		$('.dl .jquery').css('right', 0);
+	}
+	if($(target).hasClass('bootstrap')) {
+		$('.dl .bootstrap').css('right', 0);
+	}
+	clearT();
+	$(target).css('right', 0);
+})
+
+var timer;
+
+function clearT () {
+	timer = setTimeout(function() {
+		$('.description-languages').css('right', -400);
+	}, 10000)
+	return timer;
+}
+
+ $('.slick').slick({
+ 	slidesToShow: 1,
+ 	slidesToScroll: 1
+ });
+

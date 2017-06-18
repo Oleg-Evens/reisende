@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Lobster');
 
+@font-face {
+	font-family: Albionic;
+	src: url(fonts/a_Albionic.ttf);
+}
+
+@font-face {
+	font-family: a_Futurica_ExtraBold;
+	src: url(fonts/a_Futurica_ExtraBold.ttf);
+}
+
 body {
 	font-family: Lato;
 	-webkit-font-smoothing: antialiased;
@@ -9,6 +19,7 @@ body {
 	-o-transition: 0.3s;
 	-moz-transition: 0.3s;
 	-webkit-transition: 0.3s;
+	overflow-x: hidden;
 }
 
 a {
@@ -454,13 +465,30 @@ a:hover {
 	background: #5d5d5d;
 }
 
+@media screen and (max-width: 1000px) {
+	.works {
+		height: 550px;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.works {
+		height: 400px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.works {
+		height: 300px;
+	}
+}
+
 @media screen and (max-width: 500px) {
 	.d-block {
 		height: 200px;
 	}
 	.works {
-		width: 400px;
-		height: 300px;
+		height: 250px;
 	}
 	.slider {
 		width: 200px;
@@ -471,6 +499,15 @@ a:hover {
 	.d-block {
 		height: 150px;
 		width: 255px;
+	}
+	.works {
+		height: 175px;
+	}
+}
+
+@media screen and (max-width: 300px) {
+	.works {
+		height: 125px;
 	}
 }
 
@@ -664,4 +701,89 @@ a:hover {
 
 #carouselExampleIndicators:hover .click-me {
 	opacity: 0.5;
+}
+
+.description-languages {
+	position: absolute;
+	right: -400px;
+	top: 50%;
+	transform: translate(0%, -50%);
+	transition: 1s;
+	-o-transition: 1s;
+	-moz-transition: 1s;
+	-webkit-transition: 1s;
+}
+
+.desc-lang {
+	width: 300px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: #9d9d9d;
+	overflow: hidden;
+}
+
+.name-lang {
+	font-size: 35px;
+	font-family: Albionic;
+	color: #5d5d5d;
+}
+
+.text-lang {
+	font-size: 14px;
+	font-family: Helvetica;
+	color: #3d3d3d;
+}
+
+.main-lang {
+	display: flex;
+}
+
+.white-block {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+}
+
+.add-b-1 {
+	top: -25px;
+	left: -25px;
+	transform: rotate(-45deg);
+	background: #fff;
+}
+
+.add-b-2 {
+	bottom: -25px;
+	left: -25px;
+	transform: rotate(-45deg);
+	background: #fff;
+}
+
+.add-b-3 {
+	top: -25px;
+	right: -25px;
+	transform: rotate(-45deg);
+	background: #9d9d9d;
+}
+
+.add-b-4 {
+	bottom: -25px;
+	right: -25px;
+	transform: rotate(-45deg);
+	background: #9d9d9d;
+}
+
+.slick-img {
+	max-width: 900px;
+	cursor: pointer;
+}
+
+.main-slick {
+	max-width: 1150px;
+}
+
+.slick-img {
+	max-width: 100%;
+	height: auto;
 }
