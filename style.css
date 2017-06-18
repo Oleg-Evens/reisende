@@ -11,6 +11,7 @@
 }
 
 body {
+	width: 100%;
 	font-family: Lato;
 	-webkit-font-smoothing: antialiased;
 	-webkit-overflow-scrolling: touch;
@@ -478,6 +479,15 @@ a:hover {
 	}
 	.works {
 		height: 450px;
+	}
+	.ag {
+		margin: -25px 0;
+	}
+	.arg div:first-child {
+		padding: 50px 0 25px 0;
+	}
+	.arg {
+		margin-bottom: -25px;
 	}
 }
 
