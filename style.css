@@ -812,7 +812,15 @@ a:hover {
 .open {
 	position: fixed;
 	border-bottom: 25px transparent solid;
+	-o-border-bottom: 25px transparent solid;
+	-ms-border-bottom: 25px transparent solid;
+	-moz-border-bottom: 25px transparent solid;
+	-webkit-border-bottom: 25px transparent solid;
 	border-left: 25px #5d5d5d solid;
+	-o-border-left: 25px #5d5d5d solid;
+	-ms-border-left: 25px #5d5d5d solid;
+	-moz-border-left: 25px #5d5d5d solid;
+	-webkit-border-left: 25px #5d5d5d solid;
 	top: 60;
 	left: 0;
 	z-index: 9;
@@ -825,13 +833,25 @@ a:hover {
 
 .panel-item:hover .left-panel::after {
 	border-left: 25px orange solid;
+	-o-border-left: 25px orange solid;
+	-ms-border-left: 25px orange solid;
+	-moz-border-left: 25px orange solid;
+	-webkit-border-left: 25px orange solid;
 }
 
 .left-panel::after {
 	content: ' ';
 	position: absolute;
-	border-left: 25px #5d5d5d solid;
 	border-bottom: 25px transparent solid;
+	-o-border-bottom: 25px transparent solid;
+	-ms-border-bottom: 25px transparent solid;
+	-moz-border-bottom: 25px transparent solid;
+	-webkit-border-bottom: 25px transparent solid;
+	border-left: 25px #5d5d5d solid;
+	-o-border-left: 25px #5d5d5d solid;
+	-ms-border-left: 25px #5d5d5d solid;
+	-moz-border-left: 25px #5d5d5d solid;
+	-webkit-border-left: 25px #5d5d5d solid;
 	top: 0;
 	right: -25px;
 	transition: 0.25s;
@@ -844,7 +864,15 @@ a:hover {
 	content: ' ';
 	position: absolute;
 	border-left: 25px #5d5d5d solid;
+	-o-border-left: 25px #5d5d5d solid;
+	-ms-border-left: 25px #5d5d5d solid;
+	-moz-border-left: 25px #5d5d5d solid;
+	-webkit-border-left: 25px #5d5d5d solid;
 	border-bottom: 25px transparent solid;
+	-o-border-bottom: 25px transparent solid;
+	-ms-border-bottom: 25px transparent solid;
+	-moz-border-bottom: 25px transparent solid;
+	-webkit-border-bottom: 25px transparent solid;
 	bottom: -20px;
 	left: 0;
 }
@@ -867,6 +895,10 @@ a:hover {
 	top: -100px;
 	left: -50px;
 	transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
 	z-index: -10;
 	transition: 0.25s;
 	-o-transition: 0.25s;
@@ -883,7 +915,15 @@ a:hover {
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
 	border-radius: 50%;
+	-o-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
 	opacity: 0;
 	text-align: center;
 	line-height: 100px;
@@ -904,6 +944,10 @@ a:hover {
 	right: -400px;
 	top: 50%;
 	transform: translate(0%, -50%);
+	-o-transform: translate(0%, -50%);
+	-ms-transform: translate(0%, -50%);
+	-moz-transform: translate(0%, -50%);
+	-webkit-transform: translate(0%, -50%);
 	transition: 1s;
 	-o-transition: 1s;
 	-moz-transition: 1s;
@@ -914,7 +958,11 @@ a:hover {
 	position: absolute;
 	width: 300px;
 	text-align: center;
-	display: flex;
+	display: flex; 
+	display: -moz-box; 
+	display: -ms-flexbox; 
+	display: -webkit-box; 
+	display: -webkit-flex;
 	flex-direction: column;
 	align-items: center;
 	background: #9d9d9d;
@@ -936,7 +984,11 @@ a:hover {
 }
 
 .main-lang {
-	display: flex;
+	display: flex; 
+	display: -moz-box; 
+	display: -ms-flexbox; 
+	display: -webkit-box; 
+	display: -webkit-flex;
 }
 
 .white-block {
@@ -949,6 +1001,10 @@ a:hover {
 	top: -25px;
 	left: -25px;
 	transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);	
 	background: #fff;
 }
 
@@ -956,6 +1012,10 @@ a:hover {
 	bottom: -25px;
 	left: -25px;
 	transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
 	background: #fff;
 }
 
@@ -963,6 +1023,10 @@ a:hover {
 	top: -25px;
 	right: -25px;
 	transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
 	background: #9d9d9d;
 }
 
@@ -970,6 +1034,10 @@ a:hover {
 	bottom: -25px;
 	right: -25px;
 	transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
 	background: #9d9d9d;
 }
 
