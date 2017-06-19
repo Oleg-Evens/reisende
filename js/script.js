@@ -105,3 +105,74 @@ function f() {
  	slidesToScroll: 1
  });
 
+var x = 0;
+var n = 0;
+var atom = [];
+var q = 0;
+var elem = [];
+elem = document.querySelectorAll('.lang');
+var distance = elem.length;
+var obj = {
+	radius: 125
+}
+for(var t = 0; t < distance; t++) {
+	atom[t] = q;
+	q += 6.28/distance;
+}
+ter(atom,obj,elem,distance)
+
+function ter(atom,obj,elem,distance) {
+	var timer = setInterval(function() {
+		for(var i = 0; i < distance; i++) {
+			elem[i].style.left = 170 + obj.radius * Math.sin(atom[i]) + 'px';
+			elem[i].style.top = 170 + obj.radius * Math.cos(atom[i]) + 'px';
+			atom[i]+= 0.01;
+		}
+	}, 10)
+}
+
+
+
+
+
+
+
+var knowledge = ['html', 'css', 'bootstrap', 'js', 'point-js', 'jquery'];
+var width = '150px';
+var radius = 250;
+var speed = 1;
+
+
+
+
+
+var length = knowledge.length;
+for(var i = 0; i < length; i++) {
+	$(".core").append('<div class="lang"><img width="' + width + '" src="images/' + knowledge[i] + '.png"></div>');
+}
+var x = 0;
+var n = 0;
+var atom = [];
+var q = 0;
+var elem = [];
+elem = document.querySelectorAll('.lang');
+var distance = elem.length;
+var obj = {
+	radius: 125
+}
+for(var t = 0; t < distance; t++) {
+	atom[t] = q;
+	q += 6.28/distance;
+}
+ter(atom,obj,elem,distance)
+
+function ter(atom,obj,elem,distance) {
+	var timer = setInterval(function() {
+		for(var i = 0; i < distance; i++) {
+			elem[i].style.left = 170 + radius * Math.sin(atom[i]) + 'px';
+			elem[i].style.top = 170 + radius * Math.cos(atom[i]) + 'px';
+			atom[i]+= 0.0005;
+		}
+	}, speed)
+}
+

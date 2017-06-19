@@ -126,10 +126,12 @@ a:hover {
 .description {
 	font-family: Helvetica !important;
 	padding-top: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .description img {
-	padding-left: 40px;
 	padding-bottom: 30px;
 }
 
@@ -146,31 +148,35 @@ a:hover {
 
 .css {
 	position: absolute;
-	width: 150px;
-	height: 150px;
 	left: 0;
 	top: 0;
 	cursor: pointer;
 }
 
-#round {
-	position: absolute; 
-	left: 50%;
-	margin-left: -250px; 
-	margin-top: 150px;
-	top: 100px; 
-	width: 500px; 
-	height: 500px;
-	border-radius: 50%;
-	-o-border-radius: 50%;
-	-ms-border-radius: 50%;
-	-moz-border-radius: 50%;
-	-webkit-border-radius: 50%;
-	animation: rotate_lp 60s infinite linear;
+.main-atom {
+
 }
 
-.css {
-	animation: rotate_lp_invert 60s infinite linear;
+.flatness {
+	position: relative;
+	top: 25px;
+	left: 50%;
+	transform: translate(-16%);
+}
+
+.core {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	left: 75px;
+	top: 75px;
+}
+
+.lang {
+	position: absolute;
+	width: 25px;
+	height: 25px;
 }
 
 .css img {
@@ -234,12 +240,12 @@ a:hover {
 	}
 }
 
-.css img:hover {
+/*.css img:hover {
 	width: 250px;
 	height: 250px;
 	margin-left: -25px;
 	margin-top: -25px;
-}
+}*/
 
 .css:nth-child(1) {
 	top: 270px;
