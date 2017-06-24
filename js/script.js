@@ -100,10 +100,10 @@ function f() {
 }
 
 
- $('.slick').slick({
+$('.slick').slick({
  	slidesToShow: 1,
  	slidesToScroll: 1
- });
+});
 
 var x = 0;
 var n = 0;
@@ -157,9 +157,6 @@ var q = 0;
 var elem = [];
 elem = document.querySelectorAll('.lang');
 var distance = elem.length;
-var obj = {
-	radius: 125
-}
 for(var t = 0; t < distance; t++) {
 	atom[t] = q;
 	q += 6.28/distance;
@@ -175,4 +172,11 @@ function ter(atom,obj,elem,distance) {
 		}
 	}, speed)
 }
+
+
+setInterval(function(){
+	if($('.works').css('width') == '350px') {
+		return radius = 150;
+	}
+},1000)
 
